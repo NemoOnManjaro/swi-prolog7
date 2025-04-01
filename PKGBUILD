@@ -44,7 +44,8 @@ build() {
 
   ./configure --prefix=/usr \
     --disable-static        \
-    --enable-shared
+    --enable-shared         \
+    ax_cv_c_float_words_bigendian=no
    make
 }
 
